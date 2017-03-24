@@ -50,6 +50,25 @@ Known issues and areas of enhancments
 - Goal time. There is no validation on goal time (can be any number ex; 5465465463).
 
 
+Assumptions:
+------------
+
+- When game started:
+- If the user enter a bad command, "input error - please type 'print' for game details" will be displayed.
+- If the user enter start command, "Game already started" will be displayed.
+- If the user enter correct command (print or goal command or end), the command will be executed.
+- When game is not started:
+- If the user enter a bad command, "input error - please start a game through typing 'Start: '<Name of Home Team>' vs. '<Name of Away Team>''" will be displayed.
+- If the user enter a correct command, "No game currently in progress" will be displayed.
+- Exit case: command format is 'exit'.
+
+
+Program:
+-------------------
+
+It's a spring boot app that receives commandline. user will enter repeatedly command lines until entering exit command.
+
+
 Scenarios covered by unit tests:
 --------------------------------
 
